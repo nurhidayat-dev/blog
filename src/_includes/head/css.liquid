@@ -1,0 +1,10 @@
+
+<link rel="stylesheet" href="{% getBundleFileUrl 'css', 'global' %}"/>
+<!-- Inlined CSS (fastest site performance in production)  -->
+
+<meta name="generator" content="{% eleventy.runMode %}"/>
+
+{% css "global" %}
+  {% include "font.css" %}
+  {% include "app.css" %}
+{% endcss %}

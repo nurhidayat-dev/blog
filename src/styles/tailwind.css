@@ -1,0 +1,27 @@
+/* plus-jakarta-sans-latin-wght-normal */
+
+@import "tailwindcss";
+@import "./components/index.css" layer(components);
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: "Rubik Variable";
+  --color-primary: #0d1b2a;
+  --color-on-primary: #ffffff;
+  --color-secondary: #1b263b;
+  --color-on-secondary: #ffffff;
+  --color-tertiary: #415a77;
+  --color-on-tertiary: #0d1b2a;
+  --color-quaternary: #778da9;
+  --color-on-quaternary: #0d1b2a;
+  --color-quinary: #e0e1dd;
+  --color-on-quinary: #0d1b2a;
+  --color-surface: #e0e1dd;
+  --color-on-surface: #0d1b2a;
+}
+
+@layer base {
+  html {
+    @apply bg-surface text-on-surface;
+  }
+}

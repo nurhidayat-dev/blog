@@ -1,0 +1,42 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  .btn-menu {
+    @apply inline-flex md:hidden items-center;
+  }
+  .cta {
+    @apply px-4 py-3;
+  }
+  .navs {
+    @apply hidden md:block text-xl;
+    ul {
+      a {
+        display: inline-flex;
+        @apply p-1 border-b-3 border-transparent duration-50;
+        &.active {
+          color: var(--color-tertiary);
+          border-color: currentColor;
+        }
+        &:hover {
+          border-color: currentColor;
+        }
+      }
+    }
+  }
+}
+.mobile-navs {
+  left: -100%;
+  width: 80%;
+  height: 100%;
+  @apply duration-150;
+  &::backdrop {
+    @apply bg-black/50;
+  }
+  &:popover-open {
+    left: 0;
+  }
+  /* @starting-style { */
+  /*   left: -100%; */
+  /*   @apply duration-50; */
+  /* } */
+}

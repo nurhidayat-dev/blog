@@ -1,0 +1,27 @@
+@import "./container.css";
+@import "./navbar.css";
+@import "./focusable.css";
+@import "./button.css";
+
+.skip-link {
+  clip: auto;
+  block-size: auto;
+  inline-size: auto;
+  overflow: visible;
+  position: absolute;
+  z-index: 9999;
+  outline-offset: 0;
+  left: 1rem;
+  top: 1rem;
+  @apply bg-surface text-on-surface p-5 rounded-none text-xl;
+  &:not(:focus) {
+    clip: rect(0 0 0 0);
+    block-size: auto;
+    inline-size: 1px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+  }
+}

@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "pnpm tailwind:build && eleventy",
     "dev": "eleventy --serve",
+    "tailwind:dev": "pnpx @tailwindcss/cli -i ./src/styles/tailwind.css -o ./src/_includes/app.css --watch",
+    "tailwind:build": "pnpx @tailwindcss/cli -i ./src/styles/tailwind.css -o ./src/_includes/app.css --minify",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -12,9 +15,24 @@
   "license": "ISC",
   "dependencies": {
     "@11ty/eleventy": "3.0.0",
-    "@fontsource-variable/plus-jakarta-sans": "5.1.1",
+    "@11ty/eleventy-img": "6.0.1",
+    "@11ty/eleventy-plugin-rss": "2.0.3",
+    "@11ty/eleventy-plugin-syntaxhighlight": "5.0.0",
+    "@11ty/eleventy-plugin-webc": "0.11.2",
+    "@tailwindcss/cli": "4.0.0",
     "@tailwindcss/postcss": "4.0.0",
+    "@toycode/markdown-it-class": "1.2.4",
+    "markdown-it": "14.1.0",
+    "markdown-it-abbr": "2.0.0",
+    "markdown-it-anchor": "9.2.0",
+    "markdown-it-attrs": "4.3.1",
+    "markdown-it-emoji": "3.0.0",
+    "markdown-it-footnote": "4.0.0",
+    "markdown-it-link-attributes": "4.0.1",
+    "markdown-it-mark": "4.0.0",
+    "markdown-it-prism": "2.3.0",
     "postcss": "8.5.1",
+    "slugify": "1.6.6",
     "tailwindcss": "4.0.0"
   },
   "devDependencies": {
