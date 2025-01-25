@@ -1,9 +1,12 @@
 .b-container {
-  @apply max-w-6xl mx-auto;
+  @apply max-w-7xl mx-auto;
   &.fluid {
     @apply max-w-none;
   }
   &.spaced {
     @apply px-5 lg:px-10 py-10 lg:py-16;
   }
+}
+.section {
+  @apply px-5 lg:px-10 py-10 lg:py-16;
 }

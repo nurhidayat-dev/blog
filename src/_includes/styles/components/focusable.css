@@ -1,0 +1,4 @@
+:focus-visible,
+:focus {
+  @apply outline-primary outline-3 outline-offset-3;
+}

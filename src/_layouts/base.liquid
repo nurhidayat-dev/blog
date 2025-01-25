@@ -25,8 +25,9 @@ title : Blog
     <title>{{ title }}</title>
   </head>
   <body>
+    <a href="#main" class="skip-link">Skip to content</a>
     {% include "layouts/navbar" %}
-    <main id="main" class="container mx-auto">
+    <main id="main">
       {{ content }}
     </main>
   </body>

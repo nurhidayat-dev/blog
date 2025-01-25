@@ -1,0 +1,11 @@
+.btn {
+  box-shadow: 5px 5px 0 0 var(--color-primary);
+  @apply inline-flex text-xl px-5 py-3 bg-surface text-on-surface duration-50 border-3 border-primary;
+  &:hover {
+    box-shadow: 0 0 0 0;
+  }
+
+  /* &.btn-primary { */
+  /*   @apply bg-primary text-on-primary border-3 border-primary; */
+  /* } */
+}
